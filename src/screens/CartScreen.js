@@ -54,7 +54,7 @@ const CartScreen = ({ match, location, history }) => {
             Giở Hàng Của Bạn Trống Trơn
             <Link
               className="btn btn-outline-primary mx-5 px-5 py-3"
-              to="/"
+              to="/home"
               style={{
                 fontSize: "12px",
               }}
@@ -115,7 +115,7 @@ const CartScreen = ({ match, location, history }) => {
             </div>
             <hr />
             <div className="cart-buttons d-flex align-items-center row">
-              <Link to="/" className="col-md-6 ">
+              <Link to="/home" className="col-md-6 ">
                 <button>Tiếp Tục Mua Hàng</button>
               </Link>
               {total > 0 && (

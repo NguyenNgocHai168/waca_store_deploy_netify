@@ -29,7 +29,7 @@ const Header = () => {
     if (keyword) {
       history.push(`/AllProduct/search/${keyword}`);
     } else {
-      history.push("/");
+      history.push("/home");
     }
   };
   return (
@@ -75,7 +75,7 @@ const Header = () => {
           className="navbar navbar-expand-lg bg-dark navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
           data-wow-delay="0.1s"
         >
-          <Link to="/">
+          <Link to="/home">
             <h1 class="text-warning logo me-auto me-lg-0" 
             style={{fontFamily:"'Brush Script MT', cursive",marginLeft: "0.5rem"}}>Watches Camers Store</h1>
           </Link>
@@ -89,7 +89,7 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0 text-warning">
-              <Link to="/" className="nav-item nav-link nav_marginRight">
+              <Link to="/home" className="nav-item nav-link nav_marginRight">
                 Trang Chủ
               </Link>
               <Link to="/InfoShop" className="nav-item nav-link nav_marginRight">
@@ -115,7 +115,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="nav-item dropdown">
-                <Link to="/" className="nav-link nav_marginRight" data-bs-toggle="dropdown">
+                <Link to="/home" className="nav-link nav_marginRight" data-bs-toggle="dropdown">
                   Hỗ Trợ 🔻
                 </Link>
                 <div className="dropdown-menu m-0">
